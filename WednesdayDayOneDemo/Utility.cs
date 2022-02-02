@@ -15,5 +15,10 @@ namespace WednesdayDayOneDemo
             WriteLine("Press any key to continue...");
             ReadKey();
         }
+
+        public static void TextToLower(string message)
+        {
+
+        }
     }
 }
