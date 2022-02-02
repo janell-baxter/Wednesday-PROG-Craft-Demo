@@ -25,6 +25,8 @@ namespace WednesdayDayOneDemo
 
 
         Person Player = new Person();
+
+
         public void Run()
         {
             //Player.Inventory.Add(
@@ -47,21 +49,22 @@ namespace WednesdayDayOneDemo
             //interpolation
             Print($"Hello {Player.Name}, your score is {Player.Score}.");
 
-            //craft example - bread + cheese = cheese sandwich
 
             Print("Here is what is in your inventory....");
             Print(AllItemsInList(Player.Inventory));
 
 
+            //craft example - bread + cheese = cheese sandwich
 
 
             Pause();
+            //example of a declarative sentence:
             //A game allows a player to make an item if they have ingredients
         }
 
-        public void ChangeScore()
-        {
-            Player.Score++;
-        }
+        //public void ChangeScore()
+        //{
+        //    Player.Score++;
+        //}
     }
 }

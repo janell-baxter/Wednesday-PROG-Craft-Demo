@@ -17,14 +17,42 @@ namespace WednesdayDayOneDemo
             { 
                 Name = "Cheese", 
                 Description = "Cheddar cheese", 
-                Amount = 3.6f
+                Amount = 6
             },
             new Item()
-            { Amount = 1.2f}
-        
+            {
+                Name = "Bread",
+                Description = "Sourdough bread",
+                Amount = 12
+            },
+            new Item()
+            {
+                Name = "Cow Milk",
+                Description = "Cow milk",
+                Amount = 3
+            },
+            new Item()
+            {
+                Name = "Oat Milk",
+                Description = "Oat milk",
+                Amount = 12
+            }
+
         };
 
-        //A person makes a cake
+       
+
+        public void MakeItem(Formula recipe)
+        {
+            //if all the required elements in the recipe exist in the player's inventory in the right amounts (or more)
+            // remove the items from the player's inventory (or modify the amounts)
+            // add the correct item to the player's inventory
+        }
+
+
+
+        //A person makes a cake - hard coded example (not as good >.<)
+
         //void MakeCake()
         //{
         //    if (ItemIsInInventory(Inventory, "Milk") && ItemIsInInventory(Inventory, "Butter"))
@@ -35,12 +63,5 @@ namespace WednesdayDayOneDemo
         //    //return null;
 
         //}
-
-        public void MakeItem(Formula recipe)
-        {
-            //if all the required elements in the recipe exist in the player's inventory in the right amounts (or more)
-            // remove the items from the player's inventory (or modify the amounts)
-            // add the correct item to the player's inventory
-        }
     }
 }

@@ -9,17 +9,19 @@ namespace WednesdayDayOneDemo
 {
     class Utility
     {
-      
+        //separation of concern
+        public static void Print(string message)
+        {
+            WriteLine(message);
+            //specific to my GUI platform
+        }
         public static void Pause()
         {
             Print("Press any key to continue...");
             ReadKey();
         }
 
-        public static void ChangeScore(Person player, int amount)
-        {
-            player.Score += amount;
-        }
+       
         public static string AllItemsInList(List<Item> items)
         {
             string output = "";
@@ -42,19 +44,20 @@ namespace WednesdayDayOneDemo
             }
             return false;
         }
+
+
+        //expression bodied method example
+        //public static string TextToLower(string message) => message.ToLower();
+
         //public static string TextToLower(string message)
         //{
         //    return message.ToLower();
         //}
 
-        public static string TextToLower(string message) => message.ToLower();
-
-        //separation of concern
-        public static void Print(string message)
-        {
-            WriteLine(message);
-            //specific to my GUI platform
-        }
+        //public static void ChangeScore(Person player, int amount)
+        //{
+        //    player.Score += amount;
+        //}
 
     }
 }
