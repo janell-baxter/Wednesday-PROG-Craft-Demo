@@ -25,7 +25,7 @@ namespace WednesdayDayOneDemo
 
 
         Person Player = new Person();
-
+        List<Formula> Recipes = new List<Formula>();
 
         public void Run()
         {
@@ -55,7 +55,22 @@ namespace WednesdayDayOneDemo
 
 
             //craft example - bread + cheese = cheese sandwich
-
+            Recipes.Add(
+                new Formula() 
+                {
+                    Name = "Cheese Sandwich", 
+                    Ingredients = new List<Item>() 
+                    { 
+                        new Item() 
+                        {
+                            Name="Cheese" 
+                        }, 
+                        new Item() {
+                            Name = "Bread" 
+                        } 
+                    } 
+                }
+                );
 
             Pause();
             //example of a declarative sentence:

@@ -44,9 +44,19 @@ namespace WednesdayDayOneDemo
 
         public void MakeItem(Formula recipe)
         {
+
+            //get the list of ingredients from the formula/recipe
+            //for each of the ingredients search the player's inventory for a match - could use search in utility class
+            //if it exists in the player's inventory, then we want to see if there is enough
+
             //if all the required elements in the recipe exist in the player's inventory in the right amounts (or more)
             // remove the items from the player's inventory (or modify the amounts)
             // add the correct item to the player's inventory
+
+            Inventory.Add(new Item() {Name = recipe.Name });
+
+
+
         }
 
 
