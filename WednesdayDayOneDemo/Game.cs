@@ -29,6 +29,12 @@ namespace WednesdayDayOneDemo
 
         public void Run()
         {
+            Player.Inventory = CreateItemsFromFile("../../data/ingredients.txt");
+
+            Print("Here is what is in your inventory....");
+            Print(AllItemsInList(Player.Inventory));
+            Pause();
+
             //Player.Inventory.Add(
             //    new Item()
             //    { 
@@ -39,7 +45,7 @@ namespace WednesdayDayOneDemo
             //    );
             //Player.Inventory.Add(new Item("Cheese"));
 
-            Title = "Wednesday Demo!";
+            //Title = "Wednesday Demo!";
             //concatenation
             //WriteLine("Hello " + Player.Name + ", your score is " + Player.Score + ".");
 
@@ -47,11 +53,10 @@ namespace WednesdayDayOneDemo
             //WriteLine("Hello {0}, your score is {1}.", Player.Name, Player.Score);
 
             //interpolation
-            Print($"Hello {Player.Name}, your score is {Player.Score}.");
+           // Print($"Hello {Player.Name}, your score is {Player.Score}.");
 
 
-            Print("Here is what is in your inventory....");
-            Print(AllItemsInList(Player.Inventory));
+            
 
 
             //craft example - bread + cheese = cheese sandwich

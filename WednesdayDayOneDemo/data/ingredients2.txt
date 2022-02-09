@@ -1,0 +1,4 @@
+2~.79~banana~yellow fruit
+2~3.19~vanilla extract~description
+4~1.29~milk~description
+2~.50~egg~description

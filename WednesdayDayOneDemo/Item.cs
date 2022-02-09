@@ -6,7 +6,7 @@ using System.Text;
 namespace WednesdayDayOneDemo
 {
     //example enum
-    enum Material
+    public enum Material
         {
         Dry,
         Liquid,

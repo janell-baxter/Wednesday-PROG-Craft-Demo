@@ -22,6 +22,39 @@ namespace WednesdayDayOneDemo
             ReadKey();
         }
 
+        //TODO: 
+        //Read all lines
+        //split
+        //inheritance - overriding and virtual
+
+        public static string[] LoadLinesFromFile(string path)
+        {
+            return File.ReadAllLines(path);
+        }
+
+        public static List<Item> CreateItemsFromFile(string path)
+         {
+        List<Item> temp = new List<Item>();
+        string[] source = LoadLinesFromFile(path);
+            foreach (string s in source)
+             {   
+            temp.Add(new Item(){Name = s});
+            }
+        
+            return temp;
+        }
+        public static List<Item> CreateItemsWithPropertiesFromFile(string path)
+         {
+        List<Item> temp = new List<Item>();
+        string[] source = LoadLinesFromFile(path);
+            foreach (string s in source)
+             {
+                string[] subs = s.Split('~');
+                temp.Add(new Item(){Name=subs[2], Amount= float.Parse(subs[0] })
+            }
+        
+            return temp;
+        }
         /*
          * public static string LoadTextFromFile(string path)
          {

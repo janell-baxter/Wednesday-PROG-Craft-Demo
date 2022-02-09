@@ -12,6 +12,7 @@ namespace WednesdayDayOneDemo
         public int Score = 0;
         public List<Item> Inventory = new List<Item>() 
         {
+            /*
             new Item("Cookbook"),
             new Item()
             { 
@@ -38,6 +39,7 @@ namespace WednesdayDayOneDemo
                 Description = "Oat milk",
                 Amount = 12
             }
+            */
 
         };
 
