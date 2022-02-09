@@ -17,7 +17,8 @@ namespace WednesdayDayOneDemo
             { 
                 Name = "Cheese", 
                 Description = "Cheddar cheese", 
-                Amount = 6
+                Amount = 6,
+                MaterialType = Material.Other //example of using an enum
             },
             new Item()
             {

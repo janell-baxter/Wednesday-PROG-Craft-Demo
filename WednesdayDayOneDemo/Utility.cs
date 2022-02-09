@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Console;
+using System.IO;
 
 namespace WednesdayDayOneDemo
 {
@@ -20,6 +21,15 @@ namespace WednesdayDayOneDemo
             Print("Press any key to continue...");
             ReadKey();
         }
+
+        /*
+         * public static string LoadTextFromFile(string path)
+         {
+            return File.ReadAllText(path);
+        }
+        */
+        //same as previous method but expression-bodied
+        public static string LoadTextFromFile(string path) => File.ReadAllText(path);
 
        
         public static string AllItemsInList(List<Item> items)
